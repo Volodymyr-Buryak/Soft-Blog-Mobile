@@ -54,7 +54,10 @@
     .header-content nav ul {
         flex-direction: column;
         align-items: flex-end;
-        text-decoration: underline;
+    }
+
+    .header-content nav a {
+       text-decoration: underline; 
     }
 
     .categories-nav ul li {
