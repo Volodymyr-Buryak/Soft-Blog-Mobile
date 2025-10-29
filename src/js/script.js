@@ -31,25 +31,22 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isClickInsideNav && !isClickOnBtn) closeMenu();
     });
 
-
     // Скрипт для кнопки повернення
-    document.addEventListener('DOMContentLoaded', () => {
-        const topBtn = document.querySelector('.scroll-top-btn');
-        if (!topBtn) return;
+    const topBtn = document.querySelector('.scroll-top-btn');
+    if (!topBtn) return;
 
-        const toggleBtn = () => {
-            const y = window.scrollY || document.documentElement.scrollTop;
-            if (y > 150) topBtn.classList.add('is-visible');
-            else topBtn.classList.remove('is-visible');
-        };
+    const toggleBtn = () => {
+        const y = window.scrollY || document.documentElement.scrollTop;
+        if (y > 50) topBtn.classList.add('is-visible');
+        else topBtn.classList.remove('is-visible');
+    };
 
-        window.addEventListener('scroll', toggleBtn, { passive: true });
-        window.addEventListener('resize', toggleBtn);
-        toggleBtn();
+    window.addEventListener('scroll', toggleBtn, { passive: true });
+    window.addEventListener('resize', toggleBtn);
+    toggleBtn();
 
-        topBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+    topBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
 
