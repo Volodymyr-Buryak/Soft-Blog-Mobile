@@ -33,7 +33,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 60%;
+        width: 55%;
         height: 100vh;
         max-width: 320px;
         background-color: var(--accent);
@@ -113,6 +113,10 @@
 
     .back_to-top {
         display: none;
+    }
+
+    .scroll-top-btn {
+        display: inline-flex;
     }
 
     .post-content {

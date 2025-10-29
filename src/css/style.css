@@ -376,3 +376,38 @@ footer {
     padding: 10px;
     margin: 15px 0px 0px 0px;
 }
+
+/* Scroll to top button */
+.scroll-top-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: 20px;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 15;
+    transition: transform .15s ease, opacity .15s ease, background .2s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.scroll-top-btn.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-top-btn:hover { 
+    transform: translateY(-2px); 
+}
+
+.scroll-top-btn:active { 
+    transform: translateY(0); 
+}

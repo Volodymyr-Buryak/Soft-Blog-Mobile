@@ -30,4 +30,27 @@ document.addEventListener('DOMContentLoaded', function () {
         const isClickOnBtn = menuBtn.contains(e.target);
         if (!isClickInsideNav && !isClickOnBtn) closeMenu();
     });
+
+
+    // Скрипт для кнопки повернення
+    document.addEventListener('DOMContentLoaded', () => {
+        const topBtn = document.querySelector('.scroll-top-btn');
+        if (!topBtn) return;
+
+        const toggleBtn = () => {
+            const y = window.scrollY || document.documentElement.scrollTop;
+            if (y > 50) topBtn.classList.add('is-visible');
+            else topBtn.classList.remove('is-visible');
+        };
+
+        window.addEventListener('scroll', toggleBtn, { passive: true });
+        window.addEventListener('resize', toggleBtn);
+        toggleBtn();
+
+        topBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
 });
+
+
