@@ -158,16 +158,16 @@ body {
 }
 
 .header__menu-btn-line:nth-child(1) {
-    top: 12px;
+    top: 8px;
     transform: translateY(0);
 }
 
 .header__menu-btn-line:nth-child(2) {
-    top: 20px;
+    top: 16px;
 }
 
 .header__menu-btn-line:nth-child(3) {
-    top: 28px;
+    top: 24px;
 }
 
 .header__menu-btn.is-open-btn {
