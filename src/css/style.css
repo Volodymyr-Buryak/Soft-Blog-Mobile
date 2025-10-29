@@ -129,6 +129,10 @@ body {
     text-align: center;
 }
 
+.header-content nav li :hover {
+    text-decoration: underline;
+}
+
 .header__menu-btn {
     position: relative;
     display: none;
