@@ -114,6 +114,10 @@
         gap: 12px;
     }
 
+    .post-content p {
+        font-size: 14px;
+    }
+
     .post-image-wrapper {
         max-width: 100%;
         justify-content: center;
@@ -127,11 +131,11 @@
     }
 
     .post-title {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .post-header h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .footer-content {
@@ -145,6 +149,8 @@
     .footer-content h3 {
         flex: none;
     }
+
+
 
     .header__menu-btn {
         display: block;
