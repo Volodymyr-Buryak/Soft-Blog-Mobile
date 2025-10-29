@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const toggleBtn = () => {
             const y = window.scrollY || document.documentElement.scrollTop;
-            if (y > 50) topBtn.classList.add('is-visible');
+            if (y > 150) topBtn.classList.add('is-visible');
             else topBtn.classList.remove('is-visible');
         };
 
