@@ -57,6 +57,10 @@
         text-decoration: underline;
     }
 
+    .categories-nav ul li {
+        text-decoration: underline;
+    }
+
     .header-content nav li {
         flex: 0 0 auto;
         width: 100%;
