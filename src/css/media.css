@@ -56,10 +56,6 @@
         align-items: flex-end;
     }
 
-    .header-content nav a {
-       text-decoration: underline; 
-    }
-
     .categories-nav ul li {
         text-decoration: underline;
     }
@@ -74,6 +70,7 @@
         display: inline-block;
         padding: 5px 40px 5px 16px;
         color: var(--secondary);
+        text-decoration: underline; 
     }
 
     .header-content nav.is-open{
